@@ -1,11 +1,10 @@
-import "./App.css";
+import { useRoutes } from "react-router-dom";
+import routes from "src/routes";
 
 const App = () => {
-  return (
-    <div className="App">
-      <h1>Personal Website v0</h1>
-    </div>
-  );
+  const routing = useRoutes(routes());
+
+  return <> {routing}</>;
 };
 
 export default App;
